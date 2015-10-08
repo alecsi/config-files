@@ -1,0 +1,6 @@
+# Ingore everything
+*
+
+# but not these files...
+!.gitignore
+!.vimrc
