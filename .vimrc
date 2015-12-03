@@ -30,3 +30,4 @@ set wildignore=*.pyc
 set ignorecase
 set smartcase
 set hlsearch
+set incsearch
