@@ -8,9 +8,6 @@ set relativenumber
 " show the matching part of the pair for [] {} and ()
 set showmatch
 
-" enable all Python syntax highlighting features
-let python_highlight_all = 1
-
 " disable arrow keys to break bad habit
 noremap <Up> <NOP>
 noremap <Down> <NOP>
