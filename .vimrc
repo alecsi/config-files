@@ -29,5 +29,14 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-" auto save when changing buffers
-set autowriteall
+" no need to save when changing buffers
+set hidden
+
+" directory list starts in the current directory
+set autochdir
+
+" use the filetype-dependent settings in the .vim directory
+filetype plugin indent on
+
+"don't want to see certain files when I do a :e.
+set wildignore=*.pyc
