@@ -25,3 +25,8 @@ filetype plugin indent on
 
 "don't want to see certain files when I do a :e.
 set wildignore=*.pyc
+
+" useful for searching
+set ignorecase
+set smartcase
+set hlsearch
