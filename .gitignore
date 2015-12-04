@@ -3,5 +3,7 @@
 
 # but not these files...
 !.gitignore
-!.vimrc
 !.tmux.conf
+!.vimrc
+!.vim/*
+
