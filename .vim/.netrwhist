@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/alec/acme/backend/tests/parse'
+let g:netrw_dirhist_2='/home/alec/acme/backend/tests/parse/exchange'
+let g:netrw_dirhist_3='/home/alec/acme/backend/tests/parse'
+let g:netrw_dirhist_4='/home/alec/acme/backend/tests/parse/exchange'
+let g:netrw_dirhist_5='/home/alec/acme/backend/tests/parse'
+let g:netrw_dirhist_6='/home/alec/acme/backend/tests'
+let g:netrw_dirhist_7='/home/alec/acme/backend'
+let g:netrw_dirhist_8='/home/alec/acme/backend/parse'
+let g:netrw_dirhist_9='/home/alec/acme/backend/parse/exchange'
