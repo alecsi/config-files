@@ -31,3 +31,7 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
+
+" Status line
+set statusline=%F%m%r%h%w\ [%p%%]\ [LEN=%L]
+set laststatus=2
