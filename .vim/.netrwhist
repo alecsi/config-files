@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/alec/pricingmonkey/master/backend/feeds'
+let g:netrw_dirhist_2='/home/alec/pricingmonkey/master/backend'
+let g:netrw_dirhist_3='/home/alec/pricingmonkey/master'
+let g:netrw_dirhist_4='/home/alec/pricingmonkey/master/frontend'
+let g:netrw_dirhist_5='/home/alec/pricingmonkey/master/frontend/app'
+let g:netrw_dirhist_6='/home/alec/pricingmonkey/master/frontend/app/scripts'
+let g:netrw_dirhist_7='/home/alec/pricingmonkey/master/frontend/app/scripts/utils'

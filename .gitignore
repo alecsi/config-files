@@ -1,9 +1,10 @@
 # Ingore everything
-*
+/*
+/*/
 
 # but not these files...
 !.gitignore
 !.tmux.conf
 !.vimrc
-!.vim/*
+!/.vim/
 !.gitconfig
