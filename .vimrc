@@ -11,6 +11,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elm.vim'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -58,6 +59,7 @@ map <Leader>d "_d
 " ==== Filetype stuff ====
 autocmd BufNewFile, BufRead *.json set ft=javascript
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufReadPost *.ts set filetype=typescript
 
 
 " ==== Useful others =====
