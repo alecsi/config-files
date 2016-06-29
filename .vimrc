@@ -102,6 +102,9 @@ set relativenumber
 " show the matching part of the pair for [] {} and ()
 set showmatch
 
+" set backupcopy to be yes, this forces save to change the file on the drive, meaning watches can trigger a change (eg in webpack-dev-server)
+set backupcopy=yes
+
 " disable arrow keys to break bad habit
 noremap <Up> <NOP>
 noremap <Down> <NOP>
