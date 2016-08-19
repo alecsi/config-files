@@ -4,6 +4,10 @@
 set nocompatible              " be iMproved, required for Vundle
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vimproc.vim/autoload/*
+set rtp+=~/.vim/bundle/vimproc.vim/lib/*
+set rtp+=~/.vim/bundle/vimproc.vim/plugin/*
+set
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
@@ -12,6 +16,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elm.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Shougo/vimproc.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -106,7 +112,10 @@ set showmatch
 set backupcopy=yes
 
 " disable arrow keys to break bad habit
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" noremap <Up> <NOP>
+" noremap <Down> <NOP>
+" noremap <Left> <NOP>
+" noremap <Right> <NOP>
+
+" typescript config
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
