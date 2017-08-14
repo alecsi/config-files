@@ -7,7 +7,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/vimproc.vim/autoload/*
 set rtp+=~/.vim/bundle/vimproc.vim/lib/*
 set rtp+=~/.vim/bundle/vimproc.vim/plugin/*
-set
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
