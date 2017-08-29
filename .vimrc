@@ -17,6 +17,7 @@ Plugin 'elm.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'vim-syntastic/syntastic'
 call vundle#end()
 filetype plugin indent on
 
@@ -118,3 +119,25 @@ set backupcopy=yes
 
 " typescript config
 autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+autocmd FileType typescript nmap <buffer> <Leader>i : <C-u>TsuImport<CR>
+autocmd FileType typescript nmap <buffer> <Leader>r : <C-u>TsuReferences<CR>
+autocmd FileType typescript nmap <buffer> <Leader>R : <C-u>TsuRenameSymbol<CR>
+
+set statusline=%<%f\ %h%m%r
+
+" for Syntastic messages:
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" show line#:column# on the right hand side
+set statusline+=%=%-14.(%l,%c%V%)\ %P
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tslint', 'tsuquyomi']
+let g:syntastic_typescript_tslint_exec = 'node_modules/.bin/tslint'
